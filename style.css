@@ -71,5 +71,6 @@
 }
 .list_container li {
     display: flex;
+    margin-top: 10px;
     justify-content: space-around;
 }
