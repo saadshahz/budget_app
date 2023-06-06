@@ -19,6 +19,7 @@ function setbudget(){
 let remain =0;
 
 function checkAmount(){
+   let budget2 = budget;
    
 
       if(product_cost === ''|| title === ''|| date_product ===''){
@@ -28,7 +29,7 @@ function checkAmount(){
             expenses.innerText = product_cost.value
                               //300-0
                               //500-100=400-300=100
-            remain=(budget.value - product_cost.value);
+            remain= (budget2.value - product_cost.value);
             balance.innerHTML = remain;
          
             const li = document.createElement("li");
@@ -43,7 +44,7 @@ function checkAmount(){
  
     li.appendChild(span1);
     li.appendChild(span2);
-    budget.value= remain;
+    budget2.value= remain;
     title.value = "";
         
     
