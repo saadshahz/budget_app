@@ -44,7 +44,7 @@ function checkAmount(){
  
     li.appendChild(span1);
     li.appendChild(span2);
-    budget2.value= remain;
+    budget2.value = remain;
     title.value = "";
         
     
